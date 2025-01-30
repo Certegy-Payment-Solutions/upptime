@@ -1,0 +1,44 @@
+# Change these first
+owner: Certegy-Payment-Solutions # Your GitHub organization or username
+repo: upptime # The name of this repository
+
+sites:
+  - name: Cashline Production
+    url: https://cashline.certegy.com
+  - name: Cashline Dev
+    url: https://dev.cashline.certegy.com
+  - name: Cashline QA
+    url: https://qa.cashline.certegy.com
+  - name: Cashline UAT
+    url: https://uat.cashline.certegy.com
+  - name: CertegyCashline Production
+    url: https://certegycashline.com
+  - name: CertegyCashline Dev
+    url: https://dev.certegycashline.com
+  - name: CertegyCashline QA
+    url: https://qa.certegycashline.com
+  - name: CertegyCashline UAT
+    url: https://uat.certegycashline.com
+  - name: SAS Viya
+    url: https://prodviya.certegy.com
+
+status-website:
+  # Add your custom domain name, or remove the `cname` line if you don't have a domain
+  # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
+  baseUrl: /upptime
+  logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
+  name: Certegy System Status
+  introTitle: "**Certegy System Status** - Real-time system monitoring"
+  introMessage: This page provides real-time monitoring status for Certegy's critical systems and services.
+  navbar:
+    - title: Status
+      href: /
+    - title: GitHub
+      href: https://github.com/$OWNER/$REPO
+
+# Notifications configuration
+notifications:
+  # You can add various notification channels here
+  # See https://upptime.js.org/docs/notifications
+  issues:
+    assignees: # Add GitHub usernames here for issue assignments
