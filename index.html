@@ -1,210 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Certegy System Status</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-            background: #f5f5f5;
-        }
-        header {
-            text-align: center;
-            padding: 40px 0;
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            margin-bottom: 30px;
-        }
-        h1 {
-            color: #2c3e50;
-            margin-bottom: 10px;
-        }
-        .status-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-            margin-top: 20px;
-        }
-        .status-card {
-            background: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-        .status-card h3 {
-            color: #2c3e50;
-            margin-bottom: 10px;
-            border-bottom: 2px solid #eee;
-            padding-bottom: 10px;
-        }
-        .status-indicator {
-            display: inline-block;
-            width: 12px;
-            height: 12px;
-            border-radius: 50%;
-            margin-right: 8px;
-        }
-        .status-indicator.up {
-            background: #2ecc71;
-        }
-        .status-indicator.down {
-            background: #e74c3c;
-        }
-        .status-text {
-            font-weight: 500;
-        }
-        .status-text.up {
-            color: #2ecc71;
-        }
-        .status-text.down {
-            color: #e74c3c;
-        }
-        .response-time {
-            font-size: 0.9em;
-            color: #666;
-            margin-left: 20px;
-        }
-        .uptime {
-            font-size: 0.9em;
-            color: #666;
-            margin-left: 20px;
-        }
-        footer {
-            text-align: center;
-            margin-top: 40px;
-            padding: 20px;
-            color: #666;
-        }
-        .last-updated {
-            text-align: right;
-            color: #666;
-            font-size: 0.9em;
-            margin-top: 10px;
-        }
-        .loading {
-            text-align: center;
-            padding: 20px;
-            font-style: italic;
-            color: #666;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>Certegy System Status</h1>
-        <p>Real-time monitoring status for Certegy's critical systems</p>
-    </header>
-
-    <div id="status-container">
-        <div class="loading">Loading status information...</div>
-    </div>
-
-    <div class="last-updated">
-        Last updated: <span id="timestamp"></span>
-    </div>
-
-    <footer>
-        <p>© 2025 Certegy Payment Solutions. All rights reserved.</p>
-    </footer>
-
-    <script>
-        async function fetchStatus() {
-            try {
-                const response = await fetch('https://raw.githubusercontent.com/Certegy-Payment-Solutions/upptime/main/history/summary.json');
-                if (!response.ok) throw new Error('Failed to fetch summary');
-                
-                const data = await response.json();
-                updateUI(data);
-            } catch (error) {
-                console.error('Error fetching status:', error);
-                document.getElementById('status-container').innerHTML = `
-                    <div class="status-card">
-                        <h3>Error</h3>
-                        <p>Unable to load status information. Please try again later.</p>
-                    </div>
-                `;
+<!DOCTYPE html> <html lang=en> <head> <meta charset=utf-8> <meta content="width=device-width,initial-scale=1" name=viewport> <meta content=#333333 name=theme-color> <base href=/upptime/ > <link href=manifest.json rel=manifest crossorigin=use-credentials> <script>__SAPPER__={baseUrl:"/upptime",preloaded:[void 0,{}]};if('serviceWorker' in navigator)navigator.serviceWorker.register('/upptime/service-worker.js');(function(){try{eval("async function x(){}");var main="/upptime/client/client.3212fbbf.js"}catch(e){main="/upptime/client/legacy/client.ad80dde8.js"};var s=document.createElement("script");try{new Function("if(0)import('')")();s.src=main;s.type="module";s.crossOrigin="use-credentials";}catch(e){s.src="/upptime/client/shimport@2.0.5.js";s.setAttribute("data-main",main);}document.head.appendChild(s);}());</script> <link href=client/client-31a52aa5.css rel=stylesheet><link href=client/createOctokit-a85f76c7.css rel=stylesheet><link href=client/index-b0b6455a.css rel=stylesheet> <title>Certegy System Status</title> <script>// If `prefers-color-scheme` is not supported, fall back to light mode.
+      // In this case, light.css will be downloaded with `highest` priority.
+      if (typeof window !== "undefined" && typeof document !== "undefined" && "matchMedia" in window && window.matchMedia('(prefers-color-scheme: dark)').media === 'not all') {
+        document.documentElement.style.display = 'none';
+        document.head.insertAdjacentHTML(
+          'beforeend',
+          '<link rel="stylesheet" href={`${config.path}/themes/light.css`} onload="document.documentElement.style.display = \'\'">',
+        );
+      } </script> <link href=https://Certegy-Payment-Solutions.github.io/upptime/themes/light.css rel=stylesheet media=(prefers-color-scheme:light)> <link href=https://Certegy-Payment-Solutions.github.io/upptime/themes/dark.css rel=stylesheet media=(prefers-color-scheme:dark)><link href=https://Certegy-Payment-Solutions.github.io/upptime/global.css rel=stylesheet><link href=https://raw.githubusercontent.com/upptime/upptime/master/assets/upptime-icon.svg rel=icon type=image/svg><link href=/logo-192.png rel=icon type=image/png> <link href=/upptime/client/client.3212fbbf.js rel=modulepreload as=script crossorigin=use-credentials><link href=/upptime/client/client-31a52aa5.css rel=preload as=style><link href=/upptime/client/index.c1d63da7.js rel=modulepreload as=script crossorigin=use-credentials><link href=/upptime/client/createOctokit.4fe617a3.js rel=modulepreload as=script crossorigin=use-credentials><link href=/upptime/client/inject_styles.803b7e80.js rel=modulepreload as=script crossorigin=use-credentials><link href=/upptime/client/createOctokit-a85f76c7.css rel=preload as=style><link href=/upptime/client/index-b0b6455a.css rel=preload as=style></head> <body> <div id=sapper> <nav class=svelte-a08hsz><div class="svelte-a08hsz container"><div><a href=https://Certegy-Payment-Solutions.github.io/upptime class="svelte-a08hsz logo"><img alt="" class=svelte-a08hsz src=https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg> <div>Certegy System Status</div></a></div> <ul class=svelte-a08hsz><li><a href=/ class=svelte-a08hsz target=_self aria-current=page>Status</a> <li><a href=https://github.com/Certegy-Payment-Solutions/upptime class=svelte-a08hsz target=_self>GitHub</a> </li> </ul></div> </nav> <main class=container> <header class=svelte-ngkazm><h1><strong>Certegy System Status</strong> - Real-time system monitoring</h1> <p class="svelte-ngkazm lead">This page provides real-time monitoring status for Certegy's critical systems and services.</header> <section class=svelte-8lnl4f><div class="svelte-68jxue loading"><svg class=svelte-68jxue height=38 stroke=#aaa width=38 xmlns=http://www.w3.org/2000/svg><g fill=none fill-rule=evenodd><g stroke-width=2 transform="translate(1 1)"><circle cx=18 cy=18 r=18 stroke-opacity=.5></circle><path d="M36 18c0-9.94-8.06-18-18-18"><animateTransform attributeName=transform dur=1s from="0 18 18" repeatCount=indefinite to="360 18 18" type=rotate></animateTransform></path></g></g></svg></div> </section> <section class=svelte-8lnl4f><div class="svelte-68jxue loading"><svg class=svelte-68jxue height=38 stroke=#aaa width=38 xmlns=http://www.w3.org/2000/svg><g fill=none fill-rule=evenodd><g stroke-width=2 transform="translate(1 1)"><circle cx=18 cy=18 r=18 stroke-opacity=.5></circle><path d="M36 18c0-9.94-8.06-18-18-18"><animateTransform attributeName=transform dur=1s from="0 18 18" repeatCount=indefinite to="360 18 18" type=rotate></animateTransform></path></g></g></svg></div> </section> <div class="svelte-fqsq6s f changed"><h2>Live Status</h2> <form class="svelte-fqsq6s f r"><div><input class=svelte-fqsq6s id=data_day name=d type=radio value=day><label class=svelte-fqsq6s for=data_day>24h</label></div> <div><input class=svelte-fqsq6s id=data_week name=d type=radio value=week checked><label class=svelte-fqsq6s for=data_week>7d</label></div> <div><input class=svelte-fqsq6s id=data_month name=d type=radio value=month><label class=svelte-fqsq6s for=data_month>30d</label></div> <div><input class=svelte-fqsq6s id=data_year name=d type=radio value=year><label class=svelte-fqsq6s for=data_year>1y</label></div> <div><input class=svelte-fqsq6s id=data_all name=d type=radio value=all><label class=svelte-fqsq6s for=data_all>all</label></div></form></div> <section class="svelte-fqsq6s live-status"><div class="svelte-68jxue loading"><svg class=svelte-68jxue height=38 stroke=#aaa width=38 xmlns=http://www.w3.org/2000/svg><g fill=none fill-rule=evenodd><g stroke-width=2 transform="translate(1 1)"><circle cx=18 cy=18 r=18 stroke-opacity=.5></circle><path d="M36 18c0-9.94-8.06-18-18-18"><animateTransform attributeName=transform dur=1s from="0 18 18" repeatCount=indefinite to="360 18 18" type=rotate></animateTransform></path></g></g></svg></div> </section> <section><div class="svelte-68jxue loading"><svg class=svelte-68jxue height=38 stroke=#aaa width=38 xmlns=http://www.w3.org/2000/svg><g fill=none fill-rule=evenodd><g stroke-width=2 transform="translate(1 1)"><circle cx=18 cy=18 r=18 stroke-opacity=.5></circle><path d="M36 18c0-9.94-8.06-18-18-18"><animateTransform attributeName=transform dur=1s from="0 18 18" repeatCount=indefinite to="360 18 18" type=rotate></animateTransform></path></g></g></svg></div> </section> <section><div class="svelte-68jxue loading"><svg class=svelte-68jxue height=38 stroke=#aaa width=38 xmlns=http://www.w3.org/2000/svg><g fill=none fill-rule=evenodd><g stroke-width=2 transform="translate(1 1)"><circle cx=18 cy=18 r=18 stroke-opacity=.5></circle><path d="M36 18c0-9.94-8.06-18-18-18"><animateTransform attributeName=transform dur=1s from="0 18 18" repeatCount=indefinite to="360 18 18" type=rotate></animateTransform></path></g></g></svg></div></section></main> <footer class=svelte-jbr799><p>This page is <a href=https://github.com/Certegy-Payment-Solutions/upptime>open source</a>, powered by <a href=https://upptime.js.org>Upptime</a></p> </footer></div> <script> try {
+        if (typeof window !== "undefined" && window.navigator && navigator.serviceWorker) {
+          navigator.serviceWorker.getRegistrations().then(function (registrations) {
+            for (let registration of registrations) {
+              registration.unregister();
             }
+          });
         }
-
-        function updateUI(data) {
-            const services = data.map(service => ({
-                name: service.name,
-                url: service.url,
-                status: service.status,
-                uptime: service.uptime,
-                responseTime: service.time
-            }));
-
-            const groups = {
-                'Cashline Systems': services.filter(s => 
-                    s.name.toLowerCase().includes('cashline') && 
-                    !s.name.toLowerCase().includes('certegycashline')
-                ),
-                'CertegyCashline Systems': services.filter(s => 
-                    s.name.toLowerCase().includes('certegycashline')
-                ),
-                'SAS Systems': services.filter(s => 
-                    s.name.toLowerCase().includes('sas')
-                )
-            };
-
-            const container = document.getElementById('status-container');
-            container.innerHTML = `
-                <div class="status-grid">
-                    ${Object.entries(groups).map(([groupName, services]) => `
-                        <div class="status-card">
-                            <h3>${groupName}</h3>
-                            <div>
-                                ${services.map(service => `
-                                    <p>
-                                        <span class="status-indicator ${service.status === 'up' ? 'up' : 'down'}"></span>
-                                        <span class="status-text ${service.status === 'up' ? 'up' : 'down'}">
-                                            ${service.status === 'up' ? 'Operational' : 'Down'}
-                                        </span>
-                                        - ${service.name}
-                                        ${service.responseTime ? 
-                                            `<span class="response-time">${service.responseTime}ms</span>` : 
-                                            ''
-                                        }
-                                        <span class="uptime">${service.uptime ? 
-                                            `${service.uptime.toFixed(2)}% uptime` : 
-                                            ''
-                                        }</span>
-                                    </p>
-                                `).join('')}
-                            </div>
-                        </div>
-                    `).join('')}
-                </div>
-            `;
+        if (typeof window !== "undefined" && "caches" in window) {
+          caches.keys().then(function (keyList) {
+            return Promise.all(
+              keyList.map(function (key) {
+                return caches.delete(key);
+              })
+            );
+          });
         }
-
-        // Update timestamp
-        function updateTimestamp() {
-            document.getElementById('timestamp').textContent = new Date().toLocaleString();
-        }
-
-        // Initial load
-        fetchStatus();
-        updateTimestamp();
-
-        // Refresh every minute
-        setInterval(() => {
-            fetchStatus();
-            updateTimestamp();
-        }, 60000);
-    </script>
-</body>
-</html>
+      } catch (error) {} </script> 
