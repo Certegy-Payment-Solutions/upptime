@@ -99,29 +99,6 @@
             font-style: italic;
             color: #666;
         }
-        .auth-section {
-            text-align: center;
-            margin: 20px 0;
-        }
-        .auth-button {
-            background: #2c3e50;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 16px;
-        }
-        .auth-button:hover {
-            background: #34495e;
-        }
-        .token-input {
-            padding: 8px;
-            margin: 10px;
-            width: 300px;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-        }
     </style>
 </head>
 <body>
@@ -130,13 +107,8 @@
         <p>Real-time monitoring status for Certegy's critical systems</p>
     </header>
 
-    <div class="auth-section">
-        <input type="password" id="token-input" class="token-input" placeholder="Enter your GitHub token" />
-        <button onclick="saveToken()" class="auth-button">Save Token</button>
-    </div>
-
     <div id="status-container">
-        <div class="loading">Please enter your GitHub token to view status information</div>
+        <div class="loading">Loading status information...</div>
     </div>
 
     <div class="last-updated">
@@ -148,41 +120,10 @@
     </footer>
 
     <script>
-        const owner = 'Certegy-Payment-Solutions';
-        const repo = 'upptime';
-        
-        function saveToken() {
-            const token = document.getElementById('token-input').value;
-            if (token) {
-                localStorage.setItem('gh_token', token);
-                document.getElementById('token-input').value = '';
-                fetchStatus();
-            }
-        }
-
         async function fetchStatus() {
-            const token = localStorage.getItem('gh_token');
-            if (!token) {
-                document.getElementById('status-container').innerHTML = `
-                    <div class="loading">Please enter your GitHub token to view status information</div>
-                `;
-                return;
-            }
-
             try {
-                const response = await fetch(
-                    `https://api.github.com/repos/${owner}/${repo}/contents/history/summary.json`,
-                    {
-                        headers: {
-                            'Authorization': `token ${token}`,
-                            'Accept': 'application/vnd.github.v3.raw'
-                        }
-                    }
-                );
-
-                if (!response.ok) {
-                    throw new Error('Failed to fetch summary');
-                }
+                const response = await fetch('history/summary.json');
+                if (!response.ok) throw new Error('Failed to fetch summary');
                 
                 const data = await response.json();
                 updateUI(data);
@@ -191,7 +132,7 @@
                 document.getElementById('status-container').innerHTML = `
                     <div class="status-card">
                         <h3>Error</h3>
-                        <p>Unable to load status information. Please check your token and try again.</p>
+                        <p>Unable to load status information. Please try again later.</p>
                     </div>
                 `;
             }
@@ -255,26 +196,15 @@
             document.getElementById('timestamp').textContent = new Date().toLocaleString();
         }
 
-        // Check for token and load initial data
-        if (localStorage.getItem('gh_token')) {
-            fetchStatus();
-        }
+        // Initial load
+        fetchStatus();
         updateTimestamp();
 
-        // Refresh every minute if token exists
+        // Refresh every minute
         setInterval(() => {
-            if (localStorage.getItem('gh_token')) {
-                fetchStatus();
-            }
+            fetchStatus();
             updateTimestamp();
         }, 60000);
-
-        // Handle Enter key in token input
-        document.getElementById('token-input').addEventListener('keypress', function(e) {
-            if (e.key === 'Enter') {
-                saveToken();
-            }
-        });
     </script>
 </body>
 </html>
