@@ -3,24 +3,52 @@ owner: Certegy-Payment-Solutions # Your GitHub organization or username
 repo: upptime # The name of this repository
 
 sites:
-  - name: Cashline Production
-    url: https://cashline.certegy.com
-  - name: Cashline Dev
-    url: https://dev.cashline.certegy.com
-  - name: Cashline QA
-    url: https://qa.cashline.certegy.com
-  - name: Cashline UAT
-    url: https://uat.cashline.certegy.com
-  - name: CertegyCashline Production
-    url: https://certegycashline.com
-  - name: CertegyCashline Dev
-    url: https://dev.certegycashline.com
-  - name: CertegyCashline QA
-    url: https://qa.certegycashline.com
-  - name: CertegyCashline UAT
-    url: https://uat.certegycashline.com
-  - name: SAS Viya
-    url: https://prodviya.certegy.com
+  - name: Cashline Tomcat - PROD
+    url: https://certegycashline.com/
+  - name: Cashline Java - PROD
+    url: https://cashline.certegy.com/health
+  - name: Cashline Tomcat - CCE
+    url: https://cce.certegycashline.com/
+  - name: Cashline Java - CCE
+    url: https://cce.cashline.certegy.com/health
+  - name: Cashline Tomcat - UAT
+    url: https://uat.certegycashline.com/
+  - name: Cashline Java - UAT
+    url: https://uat.cashline.certegy.com/health
+  - name: Cashline Tomcat - QA
+    url: https://qat.certegycashline.com/
+  - name: Cashline Java - QA
+    url: https://qat.cashline.certegy.com/health
+  - name: Cashline Tomcat - Dev
+    url: https://dev.certegycashline.com/
+  - name: Cashline Java - Dev
+    url: https://dev.cashline.certegy.com/health
+  - name: BNPL Consumer Portal - UAT
+    url:  https://bnpl-consumer-portal-uat.certegy.com
+  - name: BNPL Consumer Portal - DEV
+    url:  https://bnpl-consumer-portal-dev.certegy.com
+  - name: BNPL Consumer Portal - Prod
+    url:  https://dashboard.certegy.com
+  - name: Bankpay - Prod
+    url:  https://bankpay.certegy.com/health
+  - name: Bankpay - CCE
+    url:  https://cce.bankpay.certegy.com/health
+  - name: Bankpay - QA
+    url:  https://qa.bankpay.certegy.com/health
+  - name: Cashline Admin Portal - QAT
+    url:  https://qat.cashlineadminportal.com/
+  - name: Cashline Admin Portal - DEV
+    url:  https://dev.cashlineadminportal.com/
+  - name: Cashline Admin Portal - Prod
+    url:  https://certegycashline.com/
+  - name: AskCertegy - PROD
+    url: https://ask.certegy.com
+  - name: AskCertegy - CCE
+    url: https://cce.askcertegy.com
+  - name: AskCertegy - QA
+    url: https://qa.askcertegy.com
+  - name: AskCertegy - DEV
+    url: https://dev.askcertegy.com
 
 status-website:
   # Add your custom domain name, or remove the `cname` line if you don't have a domain
