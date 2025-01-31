@@ -30,11 +30,17 @@ sites:
   - name: BNPL Consumer Portal - Prod
     url:  https://dashboard.certegy.com
   - name: Bankpay - Prod
-    url:  https://bankpay.certegy.com/health
+    url: https://bankpay.certegy.com/health
+    headers:
+      - "Authorization: Basic $BANKPAY_AUTH_TOKEN"
   - name: Bankpay - CCE
-    url:  https://cce.bankpay.certegy.com/health
+    url: https://cce.bankpay.certegy.com/health
+    headers:
+      - "Authorization: Basic $BANKPAY_AUTH_TOKEN"
   - name: Bankpay - QA
-    url:  https://qa.bankpay.certegy.com/health
+    url: https://qa.bankpay.certegy.com/health
+    headers:
+      - "Authorization: Basic $BANKPAY_AUTH_TOKEN"
   - name: Cashline Admin Portal - QAT
     url:  https://qat.cashlineadminportal.com/
   - name: Cashline Admin Portal - DEV
@@ -42,7 +48,7 @@ sites:
   - name: Cashline Admin Portal - Prod
     url:  https://certegycashline.com/
   - name: AskCertegy - PROD
-    url: https://ask.certegy.com
+    url: https://askcertegy.com
   - name: AskCertegy - CCE
     url: https://cce.askcertegy.com
   - name: AskCertegy - QA
