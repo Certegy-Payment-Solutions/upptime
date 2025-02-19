@@ -1,7 +1,7 @@
 url: https://cce.bankpay.certegy.com/health
-status: down
-code: 0
-responseTime: 0
-lastUpdated: 2025-02-19T20:49:58.982Z
+status: up
+code: 200
+responseTime: 510
+lastUpdated: 2025-02-19T21:05:08.856Z
 startTime: 2025-01-31T13:48:39.045Z
 generator: Upptime <https://github.com/upptime/upptime>
