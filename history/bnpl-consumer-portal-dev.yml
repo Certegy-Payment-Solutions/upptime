@@ -1,7 +1,7 @@
 url: https://bnpl-consumer-portal-dev.certegy.com
-status: down
-code: 403
-responseTime: 136
-lastUpdated: 2025-03-26T17:50:06.916Z
+status: up
+code: 200
+responseTime: 179
+lastUpdated: 2025-03-26T19:30:50.679Z
 startTime: 2025-01-31T13:48:37.744Z
 generator: Upptime <https://github.com/upptime/upptime>
