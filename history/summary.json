@@ -148,11 +148,11 @@
     "url": "https://dev.certegycashline.com/",
     "icon": "https://icons.duckduckgo.com/ip3/dev.certegycashline.com.ico",
     "slug": "cashline-tomcat-dev",
-    "status": "up",
+    "status": "down",
     "uptime": "98.80%",
-    "uptimeDay": "85.42%",
-    "uptimeWeek": "87.97%",
-    "uptimeMonth": "97.23%",
+    "uptimeDay": "85.23%",
+    "uptimeWeek": "88.04%",
+    "uptimeMonth": "97.25%",
     "uptimeYear": "98.80%",
     "time": 215,
     "timeDay": 200,
@@ -160,12 +160,12 @@
     "timeMonth": 217,
     "timeYear": 215,
     "dailyMinutesDown": {
-      "2025-04-11": 87,
+      "2025-04-11": 90,
       "2025-04-10": 279,
       "2025-04-09": 225,
       "2025-04-08": 317,
       "2025-04-07": 279,
-      "2025-04-06": 36
+      "2025-04-06": 26
     }
   },
   {
@@ -173,24 +173,24 @@
     "url": "https://dev.cashline.certegy.com/health",
     "icon": "https://icons.duckduckgo.com/ip3/dev.cashline.certegy.com.ico",
     "slug": "cashline-java-dev",
-    "status": "up",
-    "uptime": "98.83%",
-    "uptimeDay": "85.90%",
-    "uptimeWeek": "88.33%",
-    "uptimeMonth": "97.32%",
-    "uptimeYear": "98.83%",
+    "status": "down",
+    "uptime": "98.84%",
+    "uptimeDay": "85.72%",
+    "uptimeWeek": "88.40%",
+    "uptimeMonth": "97.33%",
+    "uptimeYear": "98.84%",
     "time": 209,
     "timeDay": 192,
     "timeWeek": 220,
     "timeMonth": 214,
     "timeYear": 209,
     "dailyMinutesDown": {
-      "2025-04-11": 86,
+      "2025-04-11": 89,
       "2025-04-10": 272,
       "2025-04-09": 216,
       "2025-04-08": 300,
       "2025-04-07": 268,
-      "2025-04-06": 32
+      "2025-04-06": 23
     }
   },
   {
@@ -277,11 +277,11 @@
     "url": "https://cce.bankpay.certegy.com/health",
     "icon": "https://icons.duckduckgo.com/ip3/cce.bankpay.certegy.com.ico",
     "slug": "bankpay-cce",
-    "status": "up",
+    "status": "down",
     "uptime": "98.87%",
-    "uptimeDay": "86.36%",
-    "uptimeWeek": "88.69%",
-    "uptimeMonth": "97.40%",
+    "uptimeDay": "86.20%",
+    "uptimeWeek": "88.75%",
+    "uptimeMonth": "97.41%",
     "uptimeYear": "98.87%",
     "time": 375,
     "timeDay": 359,
@@ -289,12 +289,12 @@
     "timeMonth": 395,
     "timeYear": 375,
     "dailyMinutesDown": {
-      "2025-04-11": 79,
+      "2025-04-11": 81,
       "2025-04-10": 265,
       "2025-04-09": 209,
       "2025-04-08": 293,
       "2025-04-07": 260,
-      "2025-04-06": 31
+      "2025-04-06": 22
     }
   },
   {
@@ -302,24 +302,24 @@
     "url": "https://qa.bankpay.certegy.com/health",
     "icon": "https://icons.duckduckgo.com/ip3/qa.bankpay.certegy.com.ico",
     "slug": "bankpay-qa",
-    "status": "up",
-    "uptime": "98.90%",
-    "uptimeDay": "86.83%",
-    "uptimeWeek": "89.04%",
-    "uptimeMonth": "97.48%",
-    "uptimeYear": "98.90%",
+    "status": "down",
+    "uptime": "98.91%",
+    "uptimeDay": "86.68%",
+    "uptimeWeek": "89.11%",
+    "uptimeMonth": "97.49%",
+    "uptimeYear": "98.91%",
     "time": 353,
     "timeDay": 347,
     "timeWeek": 382,
     "timeMonth": 360,
     "timeYear": 353,
     "dailyMinutesDown": {
-      "2025-04-11": 78,
+      "2025-04-11": 80,
       "2025-04-10": 257,
       "2025-04-09": 203,
       "2025-04-08": 289,
       "2025-04-07": 254,
-      "2025-04-06": 29
+      "2025-04-06": 21
     }
   },
   {
@@ -345,24 +345,24 @@
     "url": "https://dev.cashlineadminportal.com/",
     "icon": "https://icons.duckduckgo.com/ip3/dev.cashlineadminportal.com.ico",
     "slug": "cashline-admin-portal-dev",
-    "status": "up",
-    "uptime": "98.94%",
-    "uptimeDay": "87.30%",
-    "uptimeWeek": "89.40%",
-    "uptimeMonth": "97.56%",
-    "uptimeYear": "98.94%",
+    "status": "down",
+    "uptime": "98.95%",
+    "uptimeDay": "87.17%",
+    "uptimeWeek": "89.46%",
+    "uptimeMonth": "97.58%",
+    "uptimeYear": "98.95%",
     "time": 264,
     "timeDay": 248,
     "timeWeek": 275,
     "timeMonth": 270,
     "timeYear": 264,
     "dailyMinutesDown": {
-      "2025-04-11": 76,
+      "2025-04-11": 78,
       "2025-04-10": 250,
       "2025-04-09": 195,
       "2025-04-08": 272,
       "2025-04-07": 241,
-      "2025-04-06": 28
+      "2025-04-06": 20
     }
   },
   {
@@ -388,24 +388,24 @@
     "url": "https://askcertegy.com",
     "icon": "https://icons.duckduckgo.com/ip3/askcertegy.com.ico",
     "slug": "ask-certegy-prod",
-    "status": "up",
+    "status": "down",
     "uptime": "98.99%",
-    "uptimeDay": "87.90%",
-    "uptimeWeek": "89.85%",
-    "uptimeMonth": "97.67%",
+    "uptimeDay": "87.79%",
+    "uptimeWeek": "89.91%",
+    "uptimeMonth": "97.68%",
     "uptimeYear": "98.99%",
     "time": 231,
     "timeDay": 229,
     "timeWeek": 242,
-    "timeMonth": 242,
+    "timeMonth": 241,
     "timeYear": 231,
     "dailyMinutesDown": {
-      "2025-04-11": 69,
+      "2025-04-11": 70,
       "2025-04-10": 241,
       "2025-04-09": 186,
       "2025-04-08": 269,
       "2025-04-07": 235,
-      "2025-04-06": 27
+      "2025-04-06": 19
     }
   },
   {
@@ -449,24 +449,24 @@
     "url": "https://dev.askcertegy.com",
     "icon": "https://icons.duckduckgo.com/ip3/dev.askcertegy.com.ico",
     "slug": "ask-certegy-dev",
-    "status": "up",
-    "uptime": "99.03%",
-    "uptimeDay": "88.49%",
-    "uptimeWeek": "90.30%",
-    "uptimeMonth": "97.77%",
-    "uptimeYear": "99.03%",
+    "status": "down",
+    "uptime": "99.04%",
+    "uptimeDay": "88.41%",
+    "uptimeWeek": "90.36%",
+    "uptimeMonth": "97.78%",
+    "uptimeYear": "99.04%",
     "time": 213,
     "timeDay": 208,
     "timeWeek": 222,
     "timeMonth": 220,
     "timeYear": 213,
     "dailyMinutesDown": {
-      "2025-04-11": 68,
+      "2025-04-11": 69,
       "2025-04-10": 233,
       "2025-04-09": 178,
       "2025-04-08": 249,
       "2025-04-07": 224,
-      "2025-04-06": 24
+      "2025-04-06": 17
     }
   }
 ]
