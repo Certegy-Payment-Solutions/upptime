@@ -120,13 +120,13 @@ sites:
     url: https://onboarding.certegy.com/v1
     mtls: true
     
-  # Automated Client Onboarding (REST)
-  - name: Automated Client Onboarding (REST) - CCE
-    url: https://cce-notification.onboarding.certegy.com
-    mtls: true
-  - name: Automated Client Onboarding (REST) - PROD
-    url: https://notification.onboarding.certegy.com
-    mtls: true
+  # Automated Client Onboarding (REST) - Removed as requested
+  # - name: Automated Client Onboarding (REST) - CCE
+  #   url: https://cce-notification.onboarding.certegy.com
+  #   mtls: true
+  # - name: Automated Client Onboarding (REST) - PROD
+  #   url: https://notification.onboarding.certegy.com
+  #   mtls: true
     
   # Cashline services
   - name: Cashline Tomcat - CCE
@@ -230,8 +230,6 @@ status-website:
       services:
         - Automated Client Onboarding (HTTP) - CCE
         - Automated Client Onboarding (HTTP) - PROD
-        - Automated Client Onboarding (REST) - CCE
-        - Automated Client Onboarding (REST) - PROD
     
     - name: Cashline Services
       services:
