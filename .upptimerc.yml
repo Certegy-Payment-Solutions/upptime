@@ -45,7 +45,7 @@ sites:
     
   # ReqEServiceSoap (SOAP)
   - name: ReqEServiceSoap (SOAP) - CCE
-    url: https://cce-soap-reqe.certegy.com/v1
+    url: https://cce-soap-rege.certegy.com/v1
     mtls: true
   - name: ReqEServiceSoap (SOAP) - PROD
     url: https://soap-reqe.certegy.com/v1
@@ -106,10 +106,10 @@ sites:
     
   # IVR
   - name: IVR - CCE
-    url: https://cce.ivr.certegy.com/v1
+    url: https://cce.ivr.certegy.com/v1/micr-validation
     mtls: true
   - name: IVR - PROD
-    url: https://ivr.certegy.com/v1
+    url: https://ivr.certegy.com/v1/micr-validation
     mtls: true
     
   # Automated Client Onboarding (HTTP)
