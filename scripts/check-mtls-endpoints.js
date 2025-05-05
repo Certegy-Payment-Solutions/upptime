@@ -25,7 +25,37 @@ async function main() {
     for (const endpoint of mtlsEndpoints) {
       console.log(`Checking ${endpoint.name} (${endpoint.url})...`);
       try {
-        const isUp = await checkUrlWithMtls(endpoint.url);
+        let isUp = false;
+        
+        // Set environment variables based on whether it's a CCE or PROD endpoint
+        if (endpoint.name.includes('CCE')) {
+          process.env.MTLS_CERTIFICATE = process.env.CCE_MTLS_CERTIFICATE || process.env.MTLS_CERTIFICATE;
+          process.env.MTLS_CERTIFICATE_PASSWORD = process.env.CCE_MTLS_CERTIFICATE_PASSWORD || process.env.MTLS_CERTIFICATE_PASSWORD;
+        } else {
+          process.env.MTLS_CERTIFICATE = process.env.PROD_MTLS_CERTIFICATE || process.env.MTLS_CERTIFICATE;
+          process.env.MTLS_CERTIFICATE_PASSWORD = process.env.PROD_MTLS_CERTIFICATE_PASSWORD || process.env.MTLS_CERTIFICATE_PASSWORD;
+        }
+        
+        // Special handling for Bankpay endpoints that require an Authorization header
+        if (endpoint.name.includes('Bankpay') && endpoint.headers && endpoint.headers.length > 0) {
+          const authHeader = endpoint.headers.find(h => h.startsWith('Authorization:'));
+          if (authHeader) {
+            const token = authHeader.split(' ')[2]; // Extract the token from "Authorization: Basic $TOKEN"
+            const bankpayToken = process.env.BANKPAY_AUTH_TOKEN || token;
+            
+            // Make the request with the Authorization header
+            isUp = await checkUrlWithMtls(endpoint.url, {
+              headers: {
+                'Authorization': `Basic ${bankpayToken}`
+              }
+            });
+          } else {
+            isUp = await checkUrlWithMtls(endpoint.url);
+          }
+        } else {
+          isUp = await checkUrlWithMtls(endpoint.url);
+        }
+        
         console.log(`${endpoint.name} is ${isUp ? 'up' : 'down'}`);
         
         // Update the history file

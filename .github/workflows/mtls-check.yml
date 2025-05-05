@@ -30,8 +30,11 @@ jobs:
         run: |
           node scripts/check-mtls-endpoints.js
         env:
-          MTLS_CERTIFICATE: ${{ secrets.MTLS_CERTIFICATE }}
-          MTLS_CERTIFICATE_PASSWORD: ${{ secrets.MTLS_CERTIFICATE_PASSWORD }}
+          CCE_MTLS_CERTIFICATE: ${{ secrets.MTLS_CERTIFICATE }}
+          CCE_MTLS_CERTIFICATE_PASSWORD: ${{ secrets.MTLS_CERTIFICATE_PASSWORD }}
+          PROD_MTLS_CERTIFICATE: ${{ secrets.PROD_MTLS_CERTIFICATE }}
+          PROD_MTLS_CERTIFICATE_PASSWORD: ${{ secrets.PROD_MTLS_CERTIFICATE_PASSWORD }}
+          BANKPAY_AUTH_TOKEN: ${{ secrets.BANKPAY_AUTH_TOKEN }}
           GH_PAT: ${{ secrets.GH_PAT || github.token }}
       
       - name: Commit changes
