@@ -16,9 +16,8 @@
 
 name: Uptime CI
 on:
-  # Disabled schedule to avoid conflicts with mTLS Check workflow
-  # schedule:
-  #   - cron: "*/5 * * * *"
+  schedule:
+    - cron: "*/5 * * * *"
   repository_dispatch:
     types: [uptime]
   workflow_dispatch:
