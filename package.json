@@ -4,10 +4,13 @@
   "description": "Custom scripts for Upptime with mTLS support",
   "main": "index.js",
   "scripts": {
-    "check-mtls": "node scripts/check-mtls-endpoints.js"
+    "check-mtls": "node scripts/check-mtls-endpoints.js",
+    "start-webhook": "node scripts/webhook-server.js"
   },
   "dependencies": {
-    "js-yaml": "^4.1.0"
+    "express": "^4.18.2",
+    "js-yaml": "^4.1.0",
+    "node-forge": "^1.3.1"
   },
   "private": true
 }

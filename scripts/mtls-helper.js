@@ -1,9 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const https = require('https');
-const { exec } = require('child_process');
-const { promisify } = require('util');
-const execAsync = promisify(exec);
+const forge = require('node-forge');
 
 /**
  * Helper function to make HTTPS requests with mTLS authentication
@@ -25,35 +23,35 @@ async function makeSecureRequest(url, options = {}) {
       throw new Error('MTLS_CERTIFICATE_PASSWORD environment variable is not set');
     }
 
-    // Create a temporary directory
-    const tempDir = path.join(__dirname, '../.temp');
-    if (!fs.existsSync(tempDir)) {
-      fs.mkdirSync(tempDir, { recursive: true });
+    // Decode the base64-encoded certificate
+    const p12Der = forge.util.decode64(certBase64);
+    const p12Asn1 = forge.asn1.fromDer(p12Der);
+    const p12 = forge.pkcs12.pkcs12FromAsn1(p12Asn1, certPassword);
+
+    // Extract private key and certificate
+    let privateKey, certificate;
+    
+    // Get bags by type
+    const certBags = p12.getBags({ bagType: forge.pki.oids.certBag })[forge.pki.oids.certBag];
+    const keyBags = p12.getBags({ bagType: forge.pki.oids.pkcs8ShroudedKeyBag })[forge.pki.oids.pkcs8ShroudedKeyBag];
+    
+    if (certBags && certBags.length > 0) {
+      certificate = forge.pki.certificateToPem(certBags[0].cert);
+    } else {
+      throw new Error('Certificate not found in P12 file');
     }
-
-    // Decode the base64-encoded certificate and save it to a temporary file
-    const p12Path = path.join(tempDir, 'certificate.p12');
-    fs.writeFileSync(p12Path, Buffer.from(certBase64, 'base64'));
-
-    // Convert P12 to PEM using OpenSSL
-    const keyPath = path.join(tempDir, 'key.pem');
-    const certPath = path.join(tempDir, 'cert.pem');
     
-    // Extract the private key
-    await execAsync(`openssl pkcs12 -in ${p12Path} -nocerts -nodes -out ${keyPath} -passin pass:${certPassword}`);
-    
-    // Extract the certificate
-    await execAsync(`openssl pkcs12 -in ${p12Path} -clcerts -nokeys -out ${certPath} -passin pass:${certPassword}`);
-
-    // Read the PEM files
-    const key = fs.readFileSync(keyPath);
-    const cert = fs.readFileSync(certPath);
+    if (keyBags && keyBags.length > 0) {
+      privateKey = forge.pki.privateKeyToPem(keyBags[0].key);
+    } else {
+      throw new Error('Private key not found in P12 file');
+    }
 
     // Set up the HTTPS request options with the certificate
     const requestOptions = {
       ...options,
-      key: key,
-      cert: cert,
+      key: privateKey,
+      cert: certificate,
       rejectUnauthorized: false, // Set to true in production
       minVersion: 'TLSv1.2',
       maxVersion: 'TLSv1.3'
@@ -66,15 +64,6 @@ async function makeSecureRequest(url, options = {}) {
           data += chunk;
         });
         res.on('end', () => {
-          // Clean up the temporary files
-          try {
-            fs.unlinkSync(p12Path);
-            fs.unlinkSync(keyPath);
-            fs.unlinkSync(certPath);
-          } catch (err) {
-            console.error('Error cleaning up temporary files:', err);
-          }
-
           if (res.statusCode >= 200 && res.statusCode < 300) {
             try {
               const jsonData = JSON.parse(data);
@@ -89,14 +78,6 @@ async function makeSecureRequest(url, options = {}) {
       });
 
       req.on('error', (err) => {
-        // Clean up the temporary files
-        try {
-          fs.unlinkSync(p12Path);
-          fs.unlinkSync(keyPath);
-          fs.unlinkSync(certPath);
-        } catch (cleanupErr) {
-          console.error('Error cleaning up temporary files:', cleanupErr);
-        }
         reject(err);
       });
 
