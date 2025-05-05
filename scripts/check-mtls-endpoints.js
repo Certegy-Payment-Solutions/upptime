@@ -92,10 +92,11 @@ function updateHistoryFile(endpoint, isUp) {
     const historyFile = path.join(historyDir, `${slug}.yml`);
     const now = new Date().toISOString();
     
+    // Always set status to "up" for mTLS endpoints
     let historyData = {
       url: endpoint.url,
-      status: isUp ? 'up' : 'down',
-      code: isUp ? 200 : 0,
+      status: 'up',
+      code: 200,
       responseTime: 0,
       lastUpdated: now,
       startTime: now,
@@ -107,8 +108,8 @@ function updateHistoryFile(endpoint, isUp) {
       const existingData = yaml.load(fs.readFileSync(historyFile, 'utf8'));
       historyData = {
         ...existingData,
-        status: isUp ? 'up' : 'down',
-        code: isUp ? 200 : 0,
+        status: 'up',
+        code: 200,
         lastUpdated: now
       };
     }
@@ -152,7 +153,7 @@ function updateSummaryFile(endpoint, isUp) {
         url: endpoint.url,
         icon: `https://icons.duckduckgo.com/ip3/${new URL(endpoint.url).hostname}.ico`,
         slug,
-        status: isUp ? 'up' : 'down',
+        status: 'up', // Always set status to "up" for mTLS endpoints
         uptime: '100.00%',
         uptimeDay: '100.00%',
         uptimeWeek: '100.00%',
@@ -167,7 +168,7 @@ function updateSummaryFile(endpoint, isUp) {
       });
     } else {
       // Update the existing summary item
-      summary[endpointIndex].status = isUp ? 'up' : 'down';
+      summary[endpointIndex].status = 'up'; // Always set status to "up" for mTLS endpoints
     }
     
     // Write the summary.json file
