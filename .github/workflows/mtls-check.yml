@@ -24,7 +24,7 @@ jobs:
       
       - name: Install dependencies
         run: |
-          npm install js-yaml
+          npm install
       
       - name: Check mTLS endpoints
         run: |
@@ -33,3 +33,11 @@ jobs:
           MTLS_CERTIFICATE: ${{ secrets.MTLS_CERTIFICATE }}
           MTLS_CERTIFICATE_PASSWORD: ${{ secrets.MTLS_CERTIFICATE_PASSWORD }}
           GH_PAT: ${{ secrets.GH_PAT || github.token }}
+      
+      - name: Commit changes
+        run: |
+          git config --global user.name "Upptime Bot"
+          git config --global user.email "73812536+upptime-bot@users.noreply.github.com"
+          git add history
+          git commit -m "🟩 Update mTLS endpoint status" || echo "No changes to commit"
+          git push
