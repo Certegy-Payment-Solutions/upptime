@@ -14,60 +14,70 @@ sites:
   # CoreWebService (SOAP V2)
   - name: CoreWebService (SOAP V2) - CCE
     url: https://cce-soap-retail.certegy.com
+    mtls: true
   - name: CoreWebService (SOAP V2) - PROD
     url: https://soap-retail.certegy.com
     
   # PCAWebService (SOAP)
   - name: PCAWebService (SOAP) - CCE
     url: https://cce-soap-ccd.certegy.com
+    mtls: true
   - name: PCAWebService (SOAP) - PROD
     url: https://soap-ccd.certegy.com
     
   # MICR_parser (SOAP)
   - name: MICR_parser (SOAP) - CCE
     url: https://cce-soap-micr-parser.certegy.com
+    mtls: true
   - name: MICR_parser (SOAP) - PROD
     url: https://soap-micr-parser.certegy.com
     
   # POSIPGateway Service (HTTPS)
   - name: POSIPGateway Service (HTTPS) - CCE
     url: https://cce-pos-ip-gateway.certegy.com
+    mtls: true
   - name: POSIPGateway Service (HTTPS) - PROD
     url: https://pos-ip-gateway.certegy.com
     
   # ReqEServiceSoap (SOAP)
   - name: ReqEServiceSoap (SOAP) - CCE
     url: https://cce-soap-reqe.certegy.com
+    mtls: true
   - name: ReqEServiceSoap (SOAP) - PROD
     url: https://soap-reqe.certegy.com
     
   # PayNetLevel1
   - name: PayNetLevel1 - CCE
     url: https://cce-paynet.certegy.com
+    mtls: true
   - name: PayNetLevel1 - PROD
     url: https://paynet.certegy.com
     
   # PaynetMerchant
   - name: PaynetMerchant - CCE
     url: https://cce-merchant-app.certegy.com
+    mtls: true
   - name: PaynetMerchant - PROD
     url: https://merchant-app.certegy.com
     
   # kftool-certegy
   - name: kftool-certegy - CCE
     url: https://cce-kftool.certegy.com
+    mtls: true
   - name: kftool-certegy - PROD
     url: https://kftool.certegy.com
     
   # Edoc
   - name: Edoc - CCE
     url: https://cce-edoc.certegy.com
+    mtls: true
   - name: Edoc - PROD
     url: https://edoc.certegy.com
     
   # ask-certegy
   - name: ask-certegy - CCE
     url: https://cce.askcertegy.com
+    mtls: true
   - name: ask-certegy - PROD
     url: https://askcertegy.com
     
@@ -78,47 +88,55 @@ sites:
   # CoreWebService (JSON)
   - name: CoreWebService (JSON) - CCE
     url: https://cce.retail.certegy.com
+    mtls: true
   - name: CoreWebService (JSON) - PROD
     url: https://retail.certegy.com
     
   # IVR
   - name: IVR - CCE
     url: https://cce.ivr.certegy.com
+    mtls: true
   - name: IVR - PROD
     url: https://ivr.certegy.com
     
   # Automated Client Onboarding (HTTP)
   - name: Automated Client Onboarding (HTTP) - CCE
     url: https://cce.onboarding.certegy.com
+    mtls: true
   - name: Automated Client Onboarding (HTTP) - PROD
     url: https://onboarding.certegy.com
     
   # Automated Client Onboarding (REST)
   - name: Automated Client Onboarding (REST) - CCE
     url: https://cce-notification.onboarding.certegy.com
+    mtls: true
   - name: Automated Client Onboarding (REST) - PROD
     url: https://notification.onboarding.certegy.com
     
   # Cashline services
   - name: Cashline Tomcat - CCE
     url: https://cce.certegycashline.com/
+    mtls: true
   - name: Cashline Tomcat - PROD
     url: https://certegycashline.com/
     
   - name: Cashline Java - CCE
     url: https://cce.cashline.certegy.com/health
+    mtls: true
   - name: Cashline Java - PROD
     url: https://cashline.certegy.com/health
     
   # Cashline Admin Portal
   - name: Cashline Admin Portal - CCE
     url: https://cce.cashlineadminportal.com/
+    mtls: true
   - name: Cashline Admin Portal - PROD
     url: https://cashlineadminportal.com/
     
   # Bankpay
   - name: Bankpay - CCE
     url: https://cce.bankpay.certegy.com/health
+    mtls: true
     headers:
       - "Authorization: Basic $BANKPAY_AUTH_TOKEN"
   - name: Bankpay - PROD
