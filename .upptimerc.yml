@@ -5,74 +5,74 @@ repo: upptime # The name of this repository
 sites:
   # CoreWebService (SOAP V1)
   - name: CoreWebService (SOAP V1) - CCE
-    url: https://cce-soap-retail.certegy.com
+    url: https://cce-soap-retail.certegy.com/v1
     mtls: true
   - name: CoreWebService (SOAP V1) - PROD
-    url: https://soap-retail.certegy.com
+    url: https://soap-retail.certegy.com/v1
     mtls: true
     
   # CoreWebService (SOAP V2)
   - name: CoreWebService (SOAP V2) - CCE
-    url: https://cce-soap-retail.certegy.com
+    url: https://cce-soap-retail.certegy.com/v2
     mtls: true
   - name: CoreWebService (SOAP V2) - PROD
-    url: https://soap-retail.certegy.com
+    url: https://soap-retail.certegy.com/v2
     mtls: true
     
   # PCAWebService (SOAP)
   - name: PCAWebService (SOAP) - CCE
-    url: https://cce-soap-ccd.certegy.com
+    url: https://cce-soap-ccd.certegy.com/v1
     mtls: true
   - name: PCAWebService (SOAP) - PROD
-    url: https://soap-ccd.certegy.com
+    url: https://soap-ccd.certegy.com/v1
     mtls: true
     
   # MICR_parser (SOAP)
   - name: MICR_parser (SOAP) - CCE
-    url: https://cce-soap-micr-parser.certegy.com
+    url: https://cce-soap-micr-parser.certegy.com/v1
     mtls: true
   - name: MICR_parser (SOAP) - PROD
-    url: https://soap-micr-parser.certegy.com
+    url: https://soap-micr-parser.certegy.com/v1
     mtls: true
     
   # POSIPGateway Service (HTTPS)
   - name: POSIPGateway Service (HTTPS) - CCE
-    url: https://cce-pos-ip-gateway.certegy.com
+    url: https://cce-pos-ip-gateway.certegy.com/v1
     mtls: true
   - name: POSIPGateway Service (HTTPS) - PROD
-    url: https://pos-ip-gateway.certegy.com
+    url: https://pos-ip-gateway.certegy.com/v1
     mtls: true
     
   # ReqEServiceSoap (SOAP)
   - name: ReqEServiceSoap (SOAP) - CCE
-    url: https://cce-soap-reqe.certegy.com
+    url: https://cce-soap-reqe.certegy.com/v1
     mtls: true
   - name: ReqEServiceSoap (SOAP) - PROD
-    url: https://soap-reqe.certegy.com
+    url: https://soap-reqe.certegy.com/v1
     mtls: true
     
   # PayNetLevel1
   - name: PayNetLevel1 - CCE
-    url: https://cce-paynet.certegy.com
+    url: https://cce-paynet.certegy.com/PayNet/
     mtls: true
   - name: PayNetLevel1 - PROD
-    url: https://paynet.certegy.com
+    url: https://paynet.certegy.com/PayNet/
     mtls: true
     
   # PaynetMerchant
   - name: PaynetMerchant - CCE
-    url: https://cce-merchant-app.certegy.com
+    url: https://cce-merchant-app.certegy.com/portal-app/
     mtls: true
   - name: PaynetMerchant - PROD
-    url: https://merchant-app.certegy.com
+    url: https://merchant-app.certegy.com/portal-app/
     mtls: true
     
   # kftool-certegy
   - name: kftool-certegy - CCE
-    url: https://cce-kftool.certegy.com
+    url: https://cce-kftool.certegy.com/kftool-certegy/
     mtls: true
   - name: kftool-certegy - PROD
-    url: https://kftool.certegy.com
+    url: https://kftool.certegy.com/kftool-certegy/
     mtls: true
     
   # Edoc
@@ -98,26 +98,26 @@ sites:
     
   # CoreWebService (JSON)
   - name: CoreWebService (JSON) - CCE
-    url: https://cce.retail.certegy.com
+    url: https://cce.retail.certegy.com/v1
     mtls: true
   - name: CoreWebService (JSON) - PROD
-    url: https://retail.certegy.com
+    url: https://retail.certegy.com/v1
     mtls: true
     
   # IVR
   - name: IVR - CCE
-    url: https://cce.ivr.certegy.com
+    url: https://cce.ivr.certegy.com/v1
     mtls: true
   - name: IVR - PROD
-    url: https://ivr.certegy.com
+    url: https://ivr.certegy.com/v1
     mtls: true
     
   # Automated Client Onboarding (HTTP)
   - name: Automated Client Onboarding (HTTP) - CCE
-    url: https://cce.onboarding.certegy.com
+    url: https://cce.onboarding.certegy.com/v1
     mtls: true
   - name: Automated Client Onboarding (HTTP) - PROD
-    url: https://onboarding.certegy.com
+    url: https://onboarding.certegy.com/v1
     mtls: true
     
   # Automated Client Onboarding (REST)
@@ -154,12 +154,10 @@ sites:
   # Bankpay
   - name: Bankpay - CCE
     url: https://cce.bankpay.certegy.com/health
-    mtls: true
     headers:
       - "Authorization: Basic $BANKPAY_AUTH_TOKEN"
   - name: Bankpay - PROD
     url: https://bankpay.certegy.com/health
-    mtls: true
     headers:
       - "Authorization: Basic $BANKPAY_AUTH_TOKEN"
 
