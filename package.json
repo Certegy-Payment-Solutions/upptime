@@ -1,0 +1,13 @@
+{
+  "name": "upptime-mtls",
+  "version": "1.0.0",
+  "description": "Custom scripts for Upptime with mTLS support",
+  "main": "index.js",
+  "scripts": {
+    "check-mtls": "node scripts/check-mtls-endpoints.js"
+  },
+  "dependencies": {
+    "js-yaml": "^4.1.0"
+  },
+  "private": true
+}

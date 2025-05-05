@@ -1,0 +1,130 @@
+# Archived DEV and QA endpoints
+# These endpoints have been removed from the main configuration but are archived here for future reference
+
+archived_endpoints:
+  # CoreWebService (SOAP V1)
+  - name: CoreWebService (SOAP V1) - DEV
+    url: https://dev-soap-retail.certegy.com
+    mtls: true
+  - name: CoreWebService (SOAP V1) - QA
+    url: https://qa-soap-retail.certegy.com
+    mtls: true
+    
+  # CoreWebService (SOAP V2)
+  - name: CoreWebService (SOAP V2) - DEV
+    url: https://dev-soap-retail.certegy.com
+  - name: CoreWebService (SOAP V2) - QA
+    url: https://qa-soap-retail.certegy.com
+    
+  # PCAWebService (SOAP)
+  - name: PCAWebService (SOAP) - DEV
+    url: https://dev-soap-ccd.certegy.com
+  - name: PCAWebService (SOAP) - QA
+    url: https://qa-soap-ccd.certegy.com
+    
+  # MICR_parser (SOAP)
+  - name: MICR_parser (SOAP) - DEV
+    url: https://dev-soap-micr-parser.certegy.com
+  - name: MICR_parser (SOAP) - QA
+    url: https://qa-soap-micr-parser.certegy.com
+    
+  # POSIPGateway Service (HTTPS)
+  - name: POSIPGateway Service (HTTPS) - DEV
+    url: https://dev-pos-ip-gateway.certegy.com
+  - name: POSIPGateway Service (HTTPS) - QA
+    url: https://qa-pos-ip-gateway.certegy.com
+    
+  # ReqEServiceSoap (SOAP)
+  - name: ReqEServiceSoap (SOAP) - DEV
+    url: https://dev-soap-reqe.certegy.com
+  - name: ReqEServiceSoap (SOAP) - QA
+    url: https://qa-soap-reqe.certegy.com
+    
+  # PayNetLevel1
+  - name: PayNetLevel1 - DEV
+    url: https://dev-paynet.certegy.com
+  - name: PayNetLevel1 - QA
+    url: https://qa-paynet.certegy.com
+    
+  # PaynetMerchant
+  - name: PaynetMerchant - DEV
+    url: https://dev-merchant-app.certegy.com
+  - name: PaynetMerchant - QA
+    url: https://qa-merchant-app.certegy.com
+    
+  # kftool-certegy
+  - name: kftool-certegy - DEV
+    url: https://dev-kftool.certegy.com
+  - name: kftool-certegy - QA
+    url: https://qa-kftool.certegy.com
+    
+  # Edoc
+  - name: Edoc - DEV
+    url: https://dev-edoc.certegy.com
+  - name: Edoc - QA
+    url: https://qa-edoc.certegy.com
+    
+  # ask-certegy
+  - name: ask-certegy - DEV
+    url: https://dev.askcertegy.com
+  - name: ask-certegy - QA
+    url: https://qa.askcertegy.com
+    
+  # Consumer Portal
+  - name: Consumer Portal - DEV
+    url: https://bnpl-consumer-portal-dev.certegy.com
+  - name: Consumer Portal - QA
+    url: https://bnpl-consumer-portal-qa.certegy.com
+  - name: Consumer Portal - UAT
+    url: https://bnpl-consumer-portal-uat.certegy.com
+    
+  # CoreWebService (JSON)
+  - name: CoreWebService (JSON) - DEV
+    url: https://dev.retail.certegy.com
+  - name: CoreWebService (JSON) - QA
+    url: https://qa.retail.certegy.com
+    
+  # IVR
+  - name: IVR - DEV
+    url: https://dev.ivr.com
+  - name: IVR - QA
+    url: https://qa.ivr.certegy.com
+    
+  # Automated Client Onboarding (HTTP)
+  - name: Automated Client Onboarding (HTTP) - DEV
+    url: https://dev.onboarding.certegy.com
+  - name: Automated Client Onboarding (HTTP) - QA
+    url: https://qa.onboarding.certegy.com
+    
+  # Automated Client Onboarding (REST)
+  - name: Automated Client Onboarding (REST) - DEV
+    url: https://dev-notification.onboarding.certegy.com
+  - name: Automated Client Onboarding (REST) - QA
+    url: https://qa-notification.onboarding.certegy.com
+    
+  # Cashline services
+  - name: Cashline Tomcat - DEV
+    url: https://dev.certegycashline.com/
+  - name: Cashline Tomcat - QA
+    url: https://qat.certegycashline.com/
+    
+  - name: Cashline Java - DEV
+    url: https://dev.cashline.certegy.com/health
+  - name: Cashline Java - QA
+    url: https://qat.cashline.certegy.com/health
+    
+  # Cashline Admin Portal
+  - name: Cashline Admin Portal - DEV
+    url: https://dev.cashlineadminportal.com/
+  - name: Cashline Admin Portal - QA
+    url: https://qat.cashlineadminportal.com/
+    
+  # Bankpay
+  - name: Bankpay - DEV
+    url: https://dev.bankpay.certegy.com/health
+    headers:
+      - "Authorization: Basic $BANKPAY_AUTH_TOKEN"
+  - name: Bankpay - QA
+    url: https://qa.bankpay.certegy.com/health
+    headers:
+      - "Authorization: Basic $BANKPAY_AUTH_TOKEN"

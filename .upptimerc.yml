@@ -4,203 +4,119 @@ repo: upptime # The name of this repository
 
 sites:
   # CoreWebService (SOAP V1)
-  - name: CoreWebService (SOAP V1) - DEV
-    url: https://dev-soap-retail.certegy.com
-  - name: CoreWebService (SOAP V1) - QA
-    url: https://qa-soap-retail.certegy.com
   - name: CoreWebService (SOAP V1) - CCE
     url: https://cce-soap-retail.certegy.com
+    mtls: true
   - name: CoreWebService (SOAP V1) - PROD
     url: https://soap-retail.certegy.com
+    mtls: true
     
   # CoreWebService (SOAP V2)
-  - name: CoreWebService (SOAP V2) - DEV
-    url: https://dev-soap-retail.certegy.com
-  - name: CoreWebService (SOAP V2) - QA
-    url: https://qa-soap-retail.certegy.com
   - name: CoreWebService (SOAP V2) - CCE
     url: https://cce-soap-retail.certegy.com
   - name: CoreWebService (SOAP V2) - PROD
     url: https://soap-retail.certegy.com
     
   # PCAWebService (SOAP)
-  - name: PCAWebService (SOAP) - DEV
-    url: https://dev-soap-ccd.certegy.com
-  - name: PCAWebService (SOAP) - QA
-    url: https://qa-soap-ccd.certegy.com
   - name: PCAWebService (SOAP) - CCE
     url: https://cce-soap-ccd.certegy.com
   - name: PCAWebService (SOAP) - PROD
     url: https://soap-ccd.certegy.com
     
   # MICR_parser (SOAP)
-  - name: MICR_parser (SOAP) - DEV
-    url: https://dev-soap-micr-parser.certegy.com
-  - name: MICR_parser (SOAP) - QA
-    url: https://qa-soap-micr-parser.certegy.com
   - name: MICR_parser (SOAP) - CCE
     url: https://cce-soap-micr-parser.certegy.com
   - name: MICR_parser (SOAP) - PROD
     url: https://soap-micr-parser.certegy.com
     
   # POSIPGateway Service (HTTPS)
-  - name: POSIPGateway Service (HTTPS) - DEV
-    url: https://dev-pos-ip-gateway.certegy.com
-  - name: POSIPGateway Service (HTTPS) - QA
-    url: https://qa-pos-ip-gateway.certegy.com
   - name: POSIPGateway Service (HTTPS) - CCE
     url: https://cce-pos-ip-gateway.certegy.com
   - name: POSIPGateway Service (HTTPS) - PROD
     url: https://pos-ip-gateway.certegy.com
     
   # ReqEServiceSoap (SOAP)
-  - name: ReqEServiceSoap (SOAP) - DEV
-    url: https://dev-soap-reqe.certegy.com
-  - name: ReqEServiceSoap (SOAP) - QA
-    url: https://qa-soap-reqe.certegy.com
   - name: ReqEServiceSoap (SOAP) - CCE
     url: https://cce-soap-reqe.certegy.com
   - name: ReqEServiceSoap (SOAP) - PROD
     url: https://soap-reqe.certegy.com
     
   # PayNetLevel1
-  - name: PayNetLevel1 - DEV
-    url: https://dev-paynet.certegy.com
-  - name: PayNetLevel1 - QA
-    url: https://qa-paynet.certegy.com
   - name: PayNetLevel1 - CCE
     url: https://cce-paynet.certegy.com
   - name: PayNetLevel1 - PROD
     url: https://paynet.certegy.com
     
   # PaynetMerchant
-  - name: PaynetMerchant - DEV
-    url: https://dev-merchant-app.certegy.com
-  - name: PaynetMerchant - QA
-    url: https://qa-merchant-app.certegy.com
   - name: PaynetMerchant - CCE
     url: https://cce-merchant-app.certegy.com
   - name: PaynetMerchant - PROD
     url: https://merchant-app.certegy.com
     
   # kftool-certegy
-  - name: kftool-certegy - DEV
-    url: https://dev-kftool.certegy.com
-  - name: kftool-certegy - QA
-    url: https://qa-kftool.certegy.com
   - name: kftool-certegy - CCE
     url: https://cce-kftool.certegy.com
   - name: kftool-certegy - PROD
     url: https://kftool.certegy.com
     
   # Edoc
-  - name: Edoc - DEV
-    url: https://dev-edoc.certegy.com
-  - name: Edoc - QA
-    url: https://qa-edoc.certegy.com
   - name: Edoc - CCE
     url: https://cce-edoc.certegy.com
   - name: Edoc - PROD
     url: https://edoc.certegy.com
     
   # ask-certegy
-  - name: ask-certegy - DEV
-    url: https://dev.askcertegy.com
-  - name: ask-certegy - QA
-    url: https://qa.askcertegy.com
   - name: ask-certegy - CCE
     url: https://cce.askcertegy.com
   - name: ask-certegy - PROD
     url: https://askcertegy.com
     
   # Consumer Portal
-  - name: Consumer Portal - DEV
-    url: https://bnpl-consumer-portal-dev.certegy.com
-  - name: Consumer Portal - QA
-    url: https://bnpl-consumer-portal-qa.certegy.com
-  - name: Consumer Portal - UAT
-    url: https://bnpl-consumer-portal-uat.certegy.com
   - name: Consumer Portal - PROD
     url: https://dashboard.certegy.com
     
   # CoreWebService (JSON)
-  - name: CoreWebService (JSON) - DEV
-    url: https://dev.retail.certegy.com
-  - name: CoreWebService (JSON) - QA
-    url: https://qa.retail.certegy.com
   - name: CoreWebService (JSON) - CCE
     url: https://cce.retail.certegy.com
   - name: CoreWebService (JSON) - PROD
     url: https://retail.certegy.com
     
   # IVR
-  - name: IVR - DEV
-    url: https://dev.ivr.com
-  - name: IVR - QA
-    url: https://qa.ivr.certegy.com
   - name: IVR - CCE
     url: https://cce.ivr.certegy.com
   - name: IVR - PROD
     url: https://ivr.certegy.com
     
   # Automated Client Onboarding (HTTP)
-  - name: Automated Client Onboarding (HTTP) - DEV
-    url: https://dev.onboarding.certegy.com
-  - name: Automated Client Onboarding (HTTP) - QA
-    url: https://qa.onboarding.certegy.com
   - name: Automated Client Onboarding (HTTP) - CCE
     url: https://cce.onboarding.certegy.com
   - name: Automated Client Onboarding (HTTP) - PROD
     url: https://onboarding.certegy.com
     
   # Automated Client Onboarding (REST)
-  - name: Automated Client Onboarding (REST) - DEV
-    url: https://dev-notification.onboarding.certegy.com
-  - name: Automated Client Onboarding (REST) - QA
-    url: https://qa-notification.onboarding.certegy.com
   - name: Automated Client Onboarding (REST) - CCE
     url: https://cce-notification.onboarding.certegy.com
   - name: Automated Client Onboarding (REST) - PROD
     url: https://notification.onboarding.certegy.com
     
-  # Cashline services (already in your config, reorganized)
-  - name: Cashline Tomcat - DEV
-    url: https://dev.certegycashline.com/
-  - name: Cashline Tomcat - QA
-    url: https://qat.certegycashline.com/
+  # Cashline services
   - name: Cashline Tomcat - CCE
     url: https://cce.certegycashline.com/
   - name: Cashline Tomcat - PROD
     url: https://certegycashline.com/
     
-  - name: Cashline Java - DEV
-    url: https://dev.cashline.certegy.com/health
-  - name: Cashline Java - QA
-    url: https://qat.cashline.certegy.com/health
   - name: Cashline Java - CCE
     url: https://cce.cashline.certegy.com/health
   - name: Cashline Java - PROD
     url: https://cashline.certegy.com/health
     
   # Cashline Admin Portal
-  - name: Cashline Admin Portal - DEV
-    url: https://dev.cashlineadminportal.com/
-  - name: Cashline Admin Portal - QA
-    url: https://qat.cashlineadminportal.com/
   - name: Cashline Admin Portal - CCE
     url: https://cce.cashlineadminportal.com/
   - name: Cashline Admin Portal - PROD
     url: https://cashlineadminportal.com/
     
   # Bankpay
-  - name: Bankpay - DEV
-    url: https://dev.bankpay.certegy.com/health
-    headers:
-      - "Authorization: Basic $BANKPAY_AUTH_TOKEN"
-  - name: Bankpay - QA
-    url: https://qa.bankpay.certegy.com/health
-    headers:
-      - "Authorization: Basic $BANKPAY_AUTH_TOKEN"
   - name: Bankpay - CCE
     url: https://cce.bankpay.certegy.com/health
     headers:
@@ -226,114 +142,73 @@ status-website:
   groups:
     - name: Core Web Services
       services:
-        - CoreWebService (SOAP V1) - DEV
-        - CoreWebService (SOAP V1) - QA
         - CoreWebService (SOAP V1) - CCE
         - CoreWebService (SOAP V1) - PROD
-        - CoreWebService (SOAP V2) - DEV
-        - CoreWebService (SOAP V2) - QA
         - CoreWebService (SOAP V2) - CCE
         - CoreWebService (SOAP V2) - PROD
-        - CoreWebService (JSON) - DEV
-        - CoreWebService (JSON) - QA
         - CoreWebService (JSON) - CCE
         - CoreWebService (JSON) - PROD
     
     - name: PCA Web Services
       services:
-        - PCAWebService (SOAP) - DEV
-        - PCAWebService (SOAP) - QA
         - PCAWebService (SOAP) - CCE
         - PCAWebService (SOAP) - PROD
     
     - name: MICR Parser
       services:
-        - MICR_parser (SOAP) - DEV
-        - MICR_parser (SOAP) - QA
         - MICR_parser (SOAP) - CCE
         - MICR_parser (SOAP) - PROD
     
     - name: Gateway Services
       services:
-        - POSIPGateway Service (HTTPS) - DEV
-        - POSIPGateway Service (HTTPS) - QA
         - POSIPGateway Service (HTTPS) - CCE
         - POSIPGateway Service (HTTPS) - PROD
     
     - name: Request Services
       services:
-        - ReqEServiceSoap (SOAP) - DEV
-        - ReqEServiceSoap (SOAP) - QA
         - ReqEServiceSoap (SOAP) - CCE
         - ReqEServiceSoap (SOAP) - PROD
     
     - name: PayNet Services
       services:
-        - PayNetLevel1 - DEV
-        - PayNetLevel1 - QA
         - PayNetLevel1 - CCE
         - PayNetLevel1 - PROD
-        - PaynetMerchant - DEV
-        - PaynetMerchant - QA
         - PaynetMerchant - CCE
         - PaynetMerchant - PROD
     
     - name: Tools and Utilities
       services:
-        - kftool-certegy - DEV
-        - kftool-certegy - QA
         - kftool-certegy - CCE
         - kftool-certegy - PROD
-        - Edoc - DEV
-        - Edoc - QA
         - Edoc - CCE
         - Edoc - PROD
     
     - name: Customer Facing Services
       services:
-        - ask-certegy - DEV
-        - ask-certegy - QA
         - ask-certegy - CCE
         - ask-certegy - PROD
-        - Consumer Portal - DEV
-        - Consumer Portal - QA
-        - Consumer Portal - UAT
         - Consumer Portal - PROD
-        - IVR - DEV
-        - IVR - QA
         - IVR - CCE
         - IVR - PROD
     
     - name: Onboarding Services
       services:
-        - Automated Client Onboarding (HTTP) - DEV
-        - Automated Client Onboarding (HTTP) - QA
         - Automated Client Onboarding (HTTP) - CCE
         - Automated Client Onboarding (HTTP) - PROD
-        - Automated Client Onboarding (REST) - DEV
-        - Automated Client Onboarding (REST) - QA
         - Automated Client Onboarding (REST) - CCE
         - Automated Client Onboarding (REST) - PROD
     
     - name: Cashline Services
       services:
-        - Cashline Tomcat - DEV
-        - Cashline Tomcat - QA
         - Cashline Tomcat - CCE
         - Cashline Tomcat - PROD
-        - Cashline Java - DEV
-        - Cashline Java - QA
         - Cashline Java - CCE
         - Cashline Java - PROD
-        - Cashline Admin Portal - DEV
-        - Cashline Admin Portal - QA
         - Cashline Admin Portal - CCE
         - Cashline Admin Portal - PROD
     
     - name: Bankpay Services
       services:
-        - Bankpay - DEV
-        - Bankpay - QA
         - Bankpay - CCE
         - Bankpay - PROD
 

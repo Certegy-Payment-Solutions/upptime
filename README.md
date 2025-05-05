@@ -10,6 +10,28 @@ Upptime is used by [**1,000+**](https://github.com/topics/upptime) people and te
 
 <!--end: description-->
 
+## Certegy System Status
+
+This repository contains the uptime monitor and status page for Certegy Payment Solutions, powered by [Upptime](https://github.com/upptime/upptime).
+
+### mTLS Support
+
+This implementation includes support for monitoring endpoints that require mutual TLS (mTLS) authentication. The following components have been added:
+
+- **mtls-helper.js**: A helper script for making HTTPS requests with mTLS authentication
+- **check-mtls-endpoints.js**: A script that checks endpoints marked with `mtls: true` in the configuration
+- **mtls-check.yml**: A GitHub Actions workflow that runs the mTLS check script
+
+To configure an endpoint to use mTLS authentication, add `mtls: true` to its configuration in `.upptimerc.yml`:
+
+```yaml
+- name: My mTLS Endpoint
+  url: https://example.com/api
+  mtls: true
+```
+
+The mTLS certificate is stored as a GitHub secret (`MTLS_CERTIFICATE`) and is used by the check script to authenticate with the endpoints.
+
 [![Uptime CI](https://github.com/upptime/upptime/workflows/Uptime%20CI/badge.svg)](https://github.com/upptime/upptime/actions?query=workflow%3A%22Uptime+CI%22)
 [![Response Time CI](https://github.com/upptime/upptime/workflows/Response%20Time%20CI/badge.svg)](https://github.com/upptime/upptime/actions?query=workflow%3A%22Response+Time+CI%22)
 [![Graphs CI](https://github.com/upptime/upptime/workflows/Graphs%20CI/badge.svg)](https://github.com/upptime/upptime/actions?query=workflow%3A%22Graphs+CI%22)
