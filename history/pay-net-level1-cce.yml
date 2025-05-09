@@ -1,7 +1,7 @@
 url: https://cce-paynet.certegy.com/PayNet/
-status: up
+status: down
 code: 401
-responseTime: 131
-lastUpdated: 2025-05-09T13:51:36.367Z
+responseTime: 204
+lastUpdated: 2025-05-09T13:57:46.692Z
 startTime: 2025-05-05T12:30:50.278Z
 generator: Upptime <https://github.com/upptime/upptime>
