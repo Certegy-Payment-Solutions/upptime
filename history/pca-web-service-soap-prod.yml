@@ -1,7 +1,7 @@
 url: https://soap-ccd.certegy.com/v1
-status: up
+status: down
 code: 400
-responseTime: 201
-lastUpdated: 2025-05-09T15:56:42.700Z
+responseTime: 143
+lastUpdated: 2025-05-09T16:09:13.671Z
 startTime: 2025-05-05T12:30:44.605Z
 generator: Upptime <https://github.com/upptime/upptime>
