@@ -1,7 +1,7 @@
 url: https://cce-soap-retail.certegy.com/v1
-status: up
+status: down
 code: 400
-responseTime: 269
-lastUpdated: 2025-05-10T06:38:55.525Z
+responseTime: 180
+lastUpdated: 2025-05-10T07:20:48.996Z
 startTime: 2025-05-05T12:30:40.403Z
 generator: Upptime <https://github.com/upptime/upptime>
