@@ -1,7 +1,7 @@
 url: https://pos-ip-gateway.certegy.com/v1
-status: up
+status: down
 code: 401
-responseTime: 116
-lastUpdated: 2025-05-12T07:49:24.406Z
+responseTime: 247
+lastUpdated: 2025-05-12T09:03:58.185Z
 startTime: 2025-05-05T12:30:48.080Z
 generator: Upptime <https://github.com/upptime/upptime>
