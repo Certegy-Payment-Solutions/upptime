@@ -1,7 +1,7 @@
 url: https://cce-soap-rege.certegy.com/v1
-status: up
+status: down
 code: 401
-responseTime: 73
-lastUpdated: 2025-05-13T08:56:37.228Z
+responseTime: 230
+lastUpdated: 2025-05-13T09:08:54.177Z
 startTime: 2025-05-05T12:30:48.868Z
 generator: Upptime <https://github.com/upptime/upptime>
