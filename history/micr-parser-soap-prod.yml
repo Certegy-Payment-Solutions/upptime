@@ -1,7 +1,7 @@
 url: https://soap-micr-parser.certegy.com/v1
-status: up
+status: down
 code: 400
-responseTime: 134
-lastUpdated: 2025-05-16T01:47:49.995Z
+responseTime: 215
+lastUpdated: 2025-05-16T02:26:14.427Z
 startTime: 2025-05-05T12:30:46.337Z
 generator: Upptime <https://github.com/upptime/upptime>
