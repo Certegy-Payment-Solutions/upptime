@@ -1,7 +1,7 @@
 url: https://soap-retail.certegy.com/v1
-status: up
+status: down
 code: 400
-responseTime: 178
-lastUpdated: 2025-05-16T20:13:02.896Z
+responseTime: 307
+lastUpdated: 2025-05-16T20:47:10.880Z
 startTime: 2025-05-05T12:30:41.373Z
 generator: Upptime <https://github.com/upptime/upptime>
