@@ -1,7 +1,7 @@
 url: https://cce-pos-ip-gateway.certegy.com/v1
-status: up
+status: down
 code: 401
-responseTime: 188
-lastUpdated: 2025-05-16T07:28:00.001Z
+responseTime: 134
+lastUpdated: 2025-05-16T07:54:29.472Z
 startTime: 2025-05-05T12:30:47.190Z
 generator: Upptime <https://github.com/upptime/upptime>
