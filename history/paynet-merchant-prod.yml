@@ -1,7 +1,7 @@
 url: https://merchant-app.certegy.com/portal-app/
-status: down
-code: 0
-responseTime: 0
-lastUpdated: 2025-05-17T18:51:53.968Z
+status: up
+code: 200
+responseTime: 130
+lastUpdated: 2025-05-17T18:56:46.912Z
 startTime: 2025-05-05T12:30:52.461Z
 generator: Upptime <https://github.com/upptime/upptime>
