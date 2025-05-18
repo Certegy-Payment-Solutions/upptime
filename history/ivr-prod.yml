@@ -1,7 +1,7 @@
 url: https://ivr.certegy.com/v1/micr-validation
-status: up
+status: down
 code: 403
-responseTime: 109
-lastUpdated: 2025-05-18T07:15:10.721Z
+responseTime: 142
+lastUpdated: 2025-05-18T07:26:15.770Z
 startTime: 2025-05-05T12:31:00.461Z
 generator: Upptime <https://github.com/upptime/upptime>
