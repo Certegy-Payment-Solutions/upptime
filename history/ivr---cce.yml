@@ -1,7 +1,7 @@
 url: https://cce.ivr.certegy.com/v1/micr-validation
 status: up
-code: 0
+code: 200
 responseTime: 0
-lastUpdated: 2025-05-21T00:00:11.977Z
-startTime: 2025-05-05T12:30:59.833Z
+lastUpdated: '2025-05-21T00:34:01.032Z'
+startTime: '2025-05-21T00:34:01.032Z'
 generator: Upptime <https://github.com/upptime/upptime>
