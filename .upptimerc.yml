@@ -4,61 +4,61 @@ repo: upptime # The name of this repository
 
 sites:
   # CoreWebService (SOAP V1)
-  - name: CoreWebService (SOAP V1) - CCE
-    url: https://cce-soap-retail.certegy.com/v1
-    mtls: true
-  - name: CoreWebService (SOAP V1) - PROD
-    url: https://soap-retail.certegy.com/v1
-    mtls: true
-    
+#   - name: CoreWebService (SOAP V1) - CCE  # Disabled - Needs additional configuration
+#     url: https://cce-soap-retail.certegy.com/v1
+#     mtls: true
+#   - name: CoreWebService (SOAP V1) - PROD  # Disabled - Needs additional configuration
+#     url: https://soap-retail.certegy.com/v1
+#     mtls: true
+
   # CoreWebService (SOAP V2)
-  - name: CoreWebService (SOAP V2) - CCE
-    url: https://cce-soap-retail.certegy.com/v2
-    mtls: true
-  - name: CoreWebService (SOAP V2) - PROD
-    url: https://soap-retail.certegy.com/v2
-    mtls: true
-    
+#   - name: CoreWebService (SOAP V2) - CCE  # Disabled - Needs additional configuration
+#     url: https://cce-soap-retail.certegy.com/v2
+#     mtls: true
+#   - name: CoreWebService (SOAP V2) - PROD  # Disabled - Needs additional configuration
+#     url: https://soap-retail.certegy.com/v2
+#     mtls: true
+
   # PCAWebService (SOAP)
-  - name: PCAWebService (SOAP) - CCE
-    url: https://cce-soap-ccd.certegy.com/v1
-    mtls: true
-  - name: PCAWebService (SOAP) - PROD
-    url: https://soap-ccd.certegy.com/v1
-    mtls: true
-    
+#   - name: PCAWebService (SOAP) - CCE  # Disabled - Needs additional configuration
+#     url: https://cce-soap-ccd.certegy.com/v1
+#     mtls: true
+#   - name: PCAWebService (SOAP) - PROD  # Disabled - Needs additional configuration
+#     url: https://soap-ccd.certegy.com/v1
+#     mtls: true
+
   # MICR_parser (SOAP)
-  - name: MICR_parser (SOAP) - CCE
-    url: https://cce-soap-micr-parser.certegy.com/v1
-    mtls: true
-  - name: MICR_parser (SOAP) - PROD
-    url: https://soap-micr-parser.certegy.com/v1
-    mtls: true
-    
+#   - name: MICR_parser (SOAP) - CCE  # Disabled - Needs additional configuration
+#     url: https://cce-soap-micr-parser.certegy.com/v1
+#     mtls: true
+#   - name: MICR_parser (SOAP) - PROD  # Disabled - Needs additional configuration
+#     url: https://soap-micr-parser.certegy.com/v1
+#     mtls: true
+
   # POSIPGateway Service (HTTPS)
-  - name: POSIPGateway Service (HTTPS) - CCE
-    url: https://cce-pos-ip-gateway.certegy.com/v1
-    mtls: true
-  - name: POSIPGateway Service (HTTPS) - PROD
-    url: https://pos-ip-gateway.certegy.com/v1
-    mtls: true
-    
+#   - name: POSIPGateway Service (HTTPS) - CCE  # Disabled - Needs additional configuration
+#     url: https://cce-pos-ip-gateway.certegy.com/v1
+#     mtls: true
+#   - name: POSIPGateway Service (HTTPS) - PROD  # Disabled - Needs additional configuration
+#     url: https://pos-ip-gateway.certegy.com/v1
+#     mtls: true
+
   # ReqEServiceSoap (SOAP)
-  - name: ReqEServiceSoap (SOAP) - CCE
-    url: https://cce-soap-rege.certegy.com/v1
-    mtls: true
-  - name: ReqEServiceSoap (SOAP) - PROD
-    url: https://soap-reqe.certegy.com/v1
-    mtls: true
-    
+#   - name: ReqEServiceSoap (SOAP) - CCE  # Disabled - Needs additional configuration
+#     url: https://cce-soap-rege.certegy.com/v1
+#     mtls: true
+#   - name: ReqEServiceSoap (SOAP) - PROD  # Disabled - Needs additional configuration
+#     url: https://soap-reqe.certegy.com/v1
+#     mtls: true
+
   # PayNetLevel1
-  - name: PayNetLevel1 - CCE
-    url: https://cce-paynet.certegy.com/PayNet/
-    mtls: true
-  - name: PayNetLevel1 - PROD
-    url: https://paynet.certegy.com/PayNet/
-    mtls: true
-    
+#   - name: PayNetLevel1 - CCE  # Disabled - Needs additional configuration
+#     url: https://cce-paynet.certegy.com/PayNet/
+#     mtls: true
+#   - name: PayNetLevel1 - PROD  # Disabled - Needs additional configuration
+#     url: https://paynet.certegy.com/PayNet/
+#     mtls: true
+
   # PaynetMerchant
   - name: PaynetMerchant - CCE
     url: https://cce-merchant-app.certegy.com/portal-app/
@@ -66,7 +66,7 @@ sites:
   - name: PaynetMerchant - PROD
     url: https://merchant-app.certegy.com/portal-app/
     mtls: true
-    
+
   # kftool-certegy
   - name: kftool-certegy - CCE
     url: https://cce-kftool.certegy.com/kftool-certegy/
@@ -74,15 +74,15 @@ sites:
   - name: kftool-certegy - PROD
     url: https://kftool.certegy.com/kftool-certegy/
     mtls: true
-    
+
   # Edoc
-  - name: Edoc - CCE
-    url: https://cce-edoc.certegy.com
-    mtls: true
-  - name: Edoc - PROD
-    url: https://edoc.certegy.com
-    mtls: true
-    
+#   - name: Edoc - CCE  # Disabled - Needs additional configuration
+#     url: https://cce-edoc.certegy.com
+#     mtls: true
+#   - name: Edoc - PROD  # Disabled - Needs additional configuration
+#     url: https://edoc.certegy.com
+#     mtls: true
+
   # ask-certegy
   - name: ask-certegy - CCE
     url: https://cce.askcertegy.com
@@ -90,44 +90,36 @@ sites:
   - name: ask-certegy - PROD
     url: https://askcertegy.com
     mtls: true
-    
+
   # Consumer Portal
   - name: Consumer Portal - PROD
     url: https://dashboard.certegy.com
     mtls: true
-    
+
   # CoreWebService (JSON)
-  - name: CoreWebService (JSON) - CCE
-    url: https://cce.retail.certegy.com/v1
-    mtls: true
-  - name: CoreWebService (JSON) - PROD
-    url: https://retail.certegy.com/v1
-    mtls: true
-    
+#   - name: CoreWebService (JSON) - CCE  # Disabled - Needs additional configuration
+#     url: https://cce.retail.certegy.com/v1
+#     mtls: true
+#   - name: CoreWebService (JSON) - PROD  # Disabled - Needs additional configuration
+#     url: https://retail.certegy.com/v1
+#     mtls: true
+
   # IVR
-  - name: IVR - CCE
-    url: https://cce.ivr.certegy.com/v1/micr-validation
-    mtls: true
-  - name: IVR - PROD
-    url: https://ivr.certegy.com/v1/micr-validation
-    mtls: true
-    
+#   - name: IVR - CCE  # Disabled - Needs additional configuration
+#     url: https://cce.ivr.certegy.com/v1/micr-validation
+#     mtls: true
+#   - name: IVR - PROD  # Disabled - Needs additional configuration
+#     url: https://ivr.certegy.com/v1/micr-validation
+#     mtls: true
+
   # Automated Client Onboarding (HTTP)
-  - name: Automated Client Onboarding (HTTP) - CCE
-    url: https://cce.onboarding.certegy.com/v1
-    mtls: true
-  - name: Automated Client Onboarding (HTTP) - PROD
-    url: https://onboarding.certegy.com/v1
-    mtls: true
-    
-  # Automated Client Onboarding (REST) - Removed as requested
-  # - name: Automated Client Onboarding (REST) - CCE
-  #   url: https://cce-notification.onboarding.certegy.com
-  #   mtls: true
-  # - name: Automated Client Onboarding (REST) - PROD
-  #   url: https://notification.onboarding.certegy.com
-  #   mtls: true
-    
+#   - name: Automated Client Onboarding (HTTP) - CCE  # Disabled - Needs additional configuration
+#     url: https://cce.onboarding.certegy.com/v1
+#     mtls: true
+#   - name: Automated Client Onboarding (HTTP) - PROD  # Disabled - Needs additional configuration
+#     url: https://onboarding.certegy.com/v1
+#     mtls: true
+
   # Cashline services
   - name: Cashline Tomcat - CCE
     url: https://cce.certegycashline.com/
@@ -135,14 +127,14 @@ sites:
   - name: Cashline Tomcat - PROD
     url: https://certegycashline.com/
     mtls: true
-    
+
   - name: Cashline Java - CCE
     url: https://cce.cashline.certegy.com/health
     mtls: true
   - name: Cashline Java - PROD
     url: https://cashline.certegy.com/health
     mtls: true
-    
+
   # Cashline Admin Portal
   - name: Cashline Admin Portal - CCE
     url: https://cce.cashlineadminportal.com/
@@ -150,7 +142,7 @@ sites:
   - name: Cashline Admin Portal - PROD
     url: https://cashlineadminportal.com/
     mtls: true
-    
+
   # Bankpay
   - name: Bankpay - CCE
     url: https://cce.bankpay.certegy.com/health
@@ -160,94 +152,3 @@ sites:
     url: https://bankpay.certegy.com/health
     headers:
       - "Authorization: Basic $BANKPAY_AUTH_TOKEN"
-
-status-website:
-  baseUrl: /upptime
-  logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
-  name: Certegy System Status
-  introTitle: "**Certegy System Status** - Real-time system monitoring"
-  introMessage: This page provides real-time monitoring status for Certegy's critical systems and services.
-  navbar:
-    - title: Status
-      href: /
-    - title: GitHub
-      href: https://github.com/$OWNER/$REPO
-  
-  # Group services by type for better organization
-  groups:
-    - name: Core Web Services
-      services:
-        - CoreWebService (SOAP V1) - CCE
-        - CoreWebService (SOAP V1) - PROD
-        - CoreWebService (SOAP V2) - CCE
-        - CoreWebService (SOAP V2) - PROD
-        - CoreWebService (JSON) - CCE
-        - CoreWebService (JSON) - PROD
-    
-    - name: PCA Web Services
-      services:
-        - PCAWebService (SOAP) - CCE
-        - PCAWebService (SOAP) - PROD
-    
-    - name: MICR Parser
-      services:
-        - MICR_parser (SOAP) - CCE
-        - MICR_parser (SOAP) - PROD
-    
-    - name: Gateway Services
-      services:
-        - POSIPGateway Service (HTTPS) - CCE
-        - POSIPGateway Service (HTTPS) - PROD
-    
-    - name: Request Services
-      services:
-        - ReqEServiceSoap (SOAP) - CCE
-        - ReqEServiceSoap (SOAP) - PROD
-    
-    - name: PayNet Services
-      services:
-        - PayNetLevel1 - CCE
-        - PayNetLevel1 - PROD
-        - PaynetMerchant - CCE
-        - PaynetMerchant - PROD
-    
-    - name: Tools and Utilities
-      services:
-        - kftool-certegy - CCE
-        - kftool-certegy - PROD
-        - Edoc - CCE
-        - Edoc - PROD
-    
-    - name: Customer Facing Services
-      services:
-        - ask-certegy - CCE
-        - ask-certegy - PROD
-        - Consumer Portal - PROD
-        - IVR - CCE
-        - IVR - PROD
-    
-    - name: Onboarding Services
-      services:
-        - Automated Client Onboarding (HTTP) - CCE
-        - Automated Client Onboarding (HTTP) - PROD
-    
-    - name: Cashline Services
-      services:
-        - Cashline Tomcat - CCE
-        - Cashline Tomcat - PROD
-        - Cashline Java - CCE
-        - Cashline Java - PROD
-        - Cashline Admin Portal - CCE
-        - Cashline Admin Portal - PROD
-    
-    - name: Bankpay Services
-      services:
-        - Bankpay - CCE
-        - Bankpay - PROD
-
-# Notifications configuration
-notifications:
-  # You can add various notification channels here
-  # See https://upptime.js.org/docs/notifications
-  issues:
-    assignees: # Add GitHub usernames here for issue assignments
